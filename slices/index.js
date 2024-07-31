@@ -10,6 +10,6 @@ export const components = {
   product_card: dynamic(() => import("./ProductCard")),
   product_description: dynamic(() => import("./ProductDescription")),
   second_slider: dynamic(() => import("./SecondSlider")),
-  shopcards: dynamic(() => import("./Shopcards")),
+  shop_cards: dynamic(() => import("./ShopCards")),
   slider: dynamic(() => import("./Slider")),
 };
