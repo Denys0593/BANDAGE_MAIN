@@ -9,7 +9,7 @@ import Email from "@/components/Set/email/Email";
 import Login from "@/components/Set/login/Login";
 import Register from "@/components/Set/register/Register";
 import ShopCards from "@/components/shopCards/ShopCards";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // розібратись що не так з ф-ю switch
 
@@ -21,8 +21,13 @@ const ProductListPage = ({ data }) => {
   const [showLogin, setShowLogin] = useState(false);
   const [overflow, setOverflow] = useState(false);
 
-  const body = document.querySelector("body");
-  body.style.overflow = overflow ? "hidden" : "";
+  // const body = document.querySelector("body");
+  // body.style.overflow = overflow ? "hidden" : "";
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = overflow ? "hidden" : "";
+  }, [overflow])
 
   const changeState = (state, setState) => {
     setState((state) => !state);
