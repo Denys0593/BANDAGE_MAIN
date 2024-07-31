@@ -1,0 +1,28 @@
+.loading {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 700;
+  top: 50%;
+  left: 49%;
+  transform: translateX(-50%);
+  margin-top: -0.625em;
+  animation: go 2s infinite linear;
+}
+
+@keyframes go {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}

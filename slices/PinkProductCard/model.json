@@ -1,0 +1,105 @@
+{
+  "id": "pink_product_card",
+  "type": "SharedSlice",
+  "name": "PinkProductCard",
+  "description": "PinkProductCard",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heart": {
+          "type": "Image",
+          "config": {
+            "label": "heart",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "cart": {
+          "type": "Image",
+          "config": {
+            "label": "cart",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "eye": {
+          "type": "Image",
+          "config": {
+            "label": "eye",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "category": {
+          "type": "Text",
+          "config": {
+            "label": "Category",
+            "placeholder": ""
+          }
+        },
+        "oldPrice": {
+          "type": "Text",
+          "config": {
+            "label": "OldPrice",
+            "placeholder": ""
+          }
+        },
+        "newPrice": {
+          "type": "Text",
+          "config": {
+            "label": "NewPrice",
+            "placeholder": ""
+          }
+        },
+        "descr": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descr",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "miniImage": {
+          "type": "Image",
+          "config": {
+            "label": "miniImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "miniImage1": {
+          "type": "Image",
+          "config": {
+            "label": "miniImage1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

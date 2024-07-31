@@ -1,0 +1,33 @@
+.singleProductCard {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px 195px;
+  &_wrapper {
+    display: flex;
+    gap: 70px;
+  }
+  &_image {
+    height: 500px;
+    width: 380px;
+  }
+  &_descr {
+    max-width: 583px;
+  }
+  p {
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  .single {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .price {
+    margin-top: 30px;
+  }
+  .fs20 {
+    font-size: 20px;
+  }
+  .old {
+    text-decoration: line-through;
+    font-size: 20px;
+  }
+}

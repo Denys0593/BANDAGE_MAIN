@@ -1,0 +1,49 @@
+{
+  "id": "shopcards",
+  "type": "SharedSlice",
+  "name": "Shopcards",
+  "description": "Shopcards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "cardlink": {
+          "type": "Link",
+          "config": {
+            "label": "CardLink",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "cardimage": {
+          "type": "Image",
+          "config": {
+            "label": "CardImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "cardtitle": {
+          "type": "Text",
+          "config": {
+            "label": "CardTitle",
+            "placeholder": ""
+          }
+        },
+        "cardsubtitle": {
+          "type": "Text",
+          "config": {
+            "label": "CardSubtitle",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

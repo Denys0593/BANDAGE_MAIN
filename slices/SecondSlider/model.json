@@ -1,0 +1,76 @@
+{
+  "id": "second_slider",
+  "type": "SharedSlice",
+  "name": "SecondSlider",
+  "description": "SecondSlider",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "subtitle",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "descr": {
+          "type": "Text",
+          "config": {
+            "label": "descr",
+            "placeholder": ""
+          }
+        },
+        "price": {
+          "type": "Text",
+          "config": {
+            "label": "price",
+            "placeholder": ""
+          }
+        },
+        "button": {
+          "type": "Text",
+          "config": {
+            "label": "button",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "sliderID": {
+          "type": "Text",
+          "config": {
+            "label": "id",
+            "placeholder": ""
+          }
+        },
+        "displayno": {
+          "type": "Text",
+          "config": {
+            "label": "displayNo",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

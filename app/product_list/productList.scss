@@ -1,0 +1,122 @@
+.containerProductList {
+  padding: 0 158px;
+}
+
+.singleCard {
+  padding: 40px 195px;
+  &_wrapper {
+    display: flex;
+    gap: 15px;
+  }
+  &_images {
+    display: flex;
+    gap: 15px;
+    img {
+      cursor: pointer;
+    }
+  }
+  &_left {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    img {
+      max-width: none;
+      &:hover {
+        box-shadow: 2px 3px 12px 2px rgba(1.322, 1.56, 1.117, 0.5);
+        scale: 1.04;
+      }
+    }
+  }
+  .big {
+    width: 360px;
+    height: 450px;
+  }
+  &_image {
+    width: 100px;
+    height: 133px;
+    max-width: none;
+  }
+  &_middle {
+    width: 360px;
+    height: 450px;
+    img {
+      width: 100%;
+    }
+  }
+  &_descr {
+    margin-top: 50px;
+    max-width: 603px;
+  }
+  &_title {
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #252b42;
+  }
+  &_subtitle {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.01em;
+    color: #737373;
+  }
+  p {
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  &_priceAndLogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+  &_price {
+    display: flex;
+    gap: 10px;
+  }
+  &_new-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #23856d;
+  }
+  &_old-price {
+    text-decoration: line-through;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #bdbdbd;
+  }
+  &_logos {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_logo {
+    border: 1px solid #e8e8e8;
+    border-radius: 45px;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      scale: 1.1;
+      box-shadow: 0 0 5px 0.5px #23a6f0;
+    }
+    img {
+      width: 20px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.containerBSPP {
+  padding: 48px 158px 48px 232px;
+  width: 100%;
+  height: 1086px;
+  background: #fafafa;
+  &_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: #252b42;
+  }
+  hr {
+    margin-top: 24px;
+  }
+}

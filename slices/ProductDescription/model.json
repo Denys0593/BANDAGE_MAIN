@@ -1,0 +1,94 @@
+{
+  "id": "product_description",
+  "type": "SharedSlice",
+  "name": "ProductDescription",
+  "description": "ProductDescription",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "button": {
+          "type": "Text",
+          "config": {
+            "label": "Button",
+            "placeholder": ""
+          }
+        },
+        "button2": {
+          "type": "Text",
+          "config": {
+            "label": "Button",
+            "placeholder": ""
+          }
+        },
+        "button3": {
+          "type": "Text",
+          "config": {
+            "label": "Button3",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "descr": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descr",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "title2": {
+          "type": "Text",
+          "config": {
+            "label": "Title2",
+            "placeholder": ""
+          }
+        },
+        "title3": {
+          "type": "Text",
+          "config": {
+            "label": "Title3",
+            "placeholder": ""
+          }
+        },
+        "arrow": {
+          "type": "Image",
+          "config": {
+            "label": "Arrow",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "listItem": {
+          "type": "Text",
+          "config": {
+            "label": "ListItem",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}
