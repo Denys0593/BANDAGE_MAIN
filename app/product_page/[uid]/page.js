@@ -18,7 +18,7 @@ const SingleProduct = async ({ params: { uid } }) => {
         {data.slices[3].items.map((item, i) => {
           if (uid === item.category) {
             return (
-              <div className="singleProductCard_wrapper">
+              <div key={item.category} className="singleProductCard_wrapper">
                 <PrismicNextImage
                   field={item.image}
                   alt=""
