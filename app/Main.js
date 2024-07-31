@@ -38,7 +38,8 @@ export default function Main({ data }) {
 
   return (
     <>
-      <Login
+    <div>op</div>
+      {/* <Login
         showLogin={showLogin}
         close={setShowLogin}
         setOverflow={setOverflow}
@@ -66,7 +67,7 @@ export default function Main({ data }) {
       <BestSeller data={arr} />
       <SecondSlider data={data} />
       <Universe data={data} />
-      {/* <Posts />
+      <Posts />
       <Footer background={"#fafafa"} /> */}
     </>
   );

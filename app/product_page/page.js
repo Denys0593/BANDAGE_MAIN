@@ -12,7 +12,8 @@ const ProductPage = async () => {
 
   return (
     <>
-      <ProductPagePage data={data} />
+      {/* <ProductPagePage data={data} /> */}
+      <div>opapa</div>
     </>
   );
 };

@@ -10,7 +10,8 @@ const SingleCard = async ({ params: { uid } }) => {
 
   return (
     <>
-      <PrismicSingleCard uid={uid} data={data} />
+    <div>opapapa</div>
+      {/* <PrismicSingleCard uid={uid} data={data} /> */}
     </>
   );
 };

@@ -15,7 +15,8 @@ const ProductList = async () => {
 
   const { data } = await client.getSingle("productcard");
 
-  return <ProductListPage data={data} />;
+  // return <ProductListPage data={data} />;
+  return <div>opa</div>;
 };
 
 export default ProductList;
