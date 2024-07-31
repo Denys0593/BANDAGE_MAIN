@@ -38,8 +38,7 @@ export default function Main({ data }) {
 
   return (
     <>
-    <div>op</div>
-      {/* <Login
+      <Login
         showLogin={showLogin}
         close={setShowLogin}
         setOverflow={setOverflow}
@@ -68,7 +67,7 @@ export default function Main({ data }) {
       <SecondSlider data={data} />
       <Universe data={data} />
       <Posts />
-      <Footer background={"#fafafa"} /> */}
+      <Footer background={"#fafafa"} />
     </>
   );
 }
