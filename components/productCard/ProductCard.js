@@ -3,7 +3,7 @@ import Pagination from "../pagination/Pagination";
 import "./productCard.scss";
 import Link from "next/link";
 
-const ProductCard = ({ data, showPagination }) => {
+const ProductCard = ({ data, showPagination, imageSize }) => {
   if (!Array.isArray(data)) {
     return (
       <div style={{ textAlign: "center", margin: "40px 0" }}>
@@ -22,7 +22,11 @@ const ProductCard = ({ data, showPagination }) => {
                 href={`/product_list/${item.category}`}
                 className="productCard_cardButton"
               >
-                <PrismicNextImage field={item.image} alt="" />
+                <PrismicNextImage
+                  className={imageSize}
+                  field={item.image}
+                  alt=""
+                />
               </Link>
               <div className="productCard_wrapper">
                 <h2 className="productCard_title">{item.title}</h2>

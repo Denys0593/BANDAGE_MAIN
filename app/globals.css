@@ -17,8 +17,7 @@
 }
 
 html,
-body,
-main {
+body {
   height: 100%;
 }
 
@@ -54,4 +53,18 @@ main {
   color: red;
   font-size: 16px;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .error {
+    height: unset;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 578px) {
+  .error {
+    height: unset;
+    margin-top: 5px;
+  }
 }

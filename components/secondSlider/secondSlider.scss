@@ -384,6 +384,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .containerSecondSlider {
+    .secondSlider {
+      &_image {
+        height: 75%;
+        left: 50%;
+      }
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .containerSecondSlider {
     height: 100vh;
@@ -415,7 +426,7 @@
       }
       &_image {
         height: 52%;
-        left: 52%;
+        left: 50%;
         top: 48%;
         transform: translateX(-50%);
       }

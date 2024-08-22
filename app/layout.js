@@ -17,18 +17,18 @@ const monsterrat = Montserrat({ subsets: ["latin"] });
 // };
 
 export default function RootLayout({ children }) {
-  const [showEmail, setShowEmail] = useState(false);
-  const [showRegister, setShowRegister] = useState(false);
-  const [showLogin, setShowLogin] = useState(false);
-  const [overflow, setOverflow] = useState(false);
+  // const [showEmail, setShowEmail] = useState(false);
+  // const [showRegister, setShowRegister] = useState(false);
+  // const [showLogin, setShowLogin] = useState(false);
+  // const [overflow, setOverflow] = useState(false);
 
-  const changeState = (state, setState) => {
-    setState((state) => !state);
-    setOverflow(true);
-  };
+  // const changeState = (state, setState) => {
+  //   setState((state) => !state);
+  //   setOverflow(true);
+  // };
 
-  const body = document.querySelector("body");
-  body.style.overflow = overflow ? "hidden" : "";
+  // const body = document.querySelector("body");
+  // body.style.overflow = overflow ? "hidden" : "";
 
   return (
     <html lang="en" className={monsterrat.className}>

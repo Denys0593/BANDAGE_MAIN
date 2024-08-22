@@ -139,3 +139,83 @@
   outline: none;
   cursor: pointer;
 }
+
+@media (max-width: 1440px) {
+  .containerFilterRow {
+    padding: 24px 75px 0 75px;
+  }
+}
+
+@media (max-width: 992px) {
+  .containerFilterRow {
+    padding: 24px 70px 40px 70px;
+    &_middle {
+      width: 140px;
+    }
+    &_squares,
+    &_lines {
+      width: 35px;
+    }
+    &_group {
+      width: 200px;
+      height: 40px;
+    }
+    &_father {
+      width: 120px;
+    }
+    &_chooseButton {
+      height: 100%;
+      padding: 0 10px;
+      width: 100%;
+    }
+    &_filterButton {
+      height: unset;
+      width: 72px;
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .containerFilterRow {
+    padding: 24px 36px 40px 36px;
+    &_left {
+      width: 153px;
+    }
+    &_group {
+      width: 180px;
+    }
+    &_father {
+      width: 100px;
+    }
+    &_middle {
+      width: unset;
+      gap: 10px;
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .containerFilterRow {
+    flex-direction: column;
+    height: 216px;
+    &_squares,
+    &_lines {
+      width: unset;
+    }
+    &_group {
+      gap: 15px;
+      width: unset;
+      height: 50px;
+    }
+    &_father {
+      width: 141px;
+    }
+    &_filterButton {
+      width: 94px;
+    }
+  }
+}

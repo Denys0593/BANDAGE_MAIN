@@ -30,10 +30,10 @@
   }
   &_left {
     width: 510px;
-    height: 550px;
+    // height: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 21px;
   }
   &_upper {
     width: 100%;
@@ -231,4 +231,150 @@
   width: 30px;
   background: #252b42;
   border-radius: 100%;
+}
+
+@media (max-width: 1440px) {
+  .containerProductItem {
+    padding: 24px 100px 48px 100px;
+    &_left {
+      gap: 21px;
+      justify-content: unset;
+    }
+    &_upper {
+      max-height: 450px;
+      max-width: 506px;
+      height: unset;
+      width: unset;
+    }
+    &_right {
+      width: unset;
+    }
+    &_description {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &_rate,
+    &_price,
+    &_availability,
+    &_descr,
+    hr,
+    &_circles,
+    &_buttons {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .containerProductItem {
+    padding: 24px 80px 48px 80px;
+    &_left {
+      align-items: center;
+    }
+    &_upper {
+      height: 90%;
+      width: 90%;
+    }
+    &_lowwer {
+      width: 90%;
+    }
+    &_right {
+      height: unset;
+      padding: 11px 0px 105px 0px;
+    }
+    &_circles {
+      width: 120px;
+      height: 25px;
+      div {
+        width: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .containerProductItem {
+    padding: 24px 40px 48px 40px;
+    &_left {
+      align-items: unset;
+    }
+    &_right {
+      padding: 11px 0 0 0;
+    }
+    &_upper,
+    &_lowwer {
+      width: unset;
+    }
+    &_description {
+      min-height: 80%;
+      height: unset;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .containerProductItem {
+    &_bottom {
+      flex-direction: column;
+    }
+    &_left {
+      width: 100%;
+    }
+    &_upper {
+      width: 90%;
+      height: unset;
+      max-height: unset;
+    }
+    &_right {
+      height: 400px;
+    }
+    &_description {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .containerProductItem {
+    &_upper {
+      width: 100%;
+    }
+    &_picture {
+      width: 75px;
+    }
+    &_right {
+      height: unset;
+    }
+    &_rate {
+      margin-top: 12px;
+    }
+    &_price {
+      margin-top: 20px;
+    }
+    &_availability {
+      margin-top: 5px;
+    }
+    &_descr {
+      margin-top: 32px;
+    }
+    hr {
+      margin-top: 16px;
+    }
+    &_circles {
+      margin-top: 19px;
+    }
+    &_buttons {
+      margin-top: 48px;
+      width: unset;
+    }
+    &_select {
+      padding: 10px 5px;
+      width: unset;
+    }
+    &_logos {
+      width: unset;
+    }
+  }
 }

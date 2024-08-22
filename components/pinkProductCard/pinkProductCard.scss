@@ -61,3 +61,64 @@
     color: #23856d;
   }
 }
+
+@media (max-width: 1440px) {
+  .pinkProductCard {
+    &_title {
+      margin-top: 0;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pinkProductCard {
+    width: unset;
+    &_title,
+    &_subtitle,
+    &_price {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pinkProductCards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pinkProductCard {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    &_image {
+      width: 100%;
+    }
+    &_title,
+    &_subtitle,
+    &_price {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .pinkProductCards {
+    align-items: unset;
+  }
+  .pinkProductCard {
+    width: 100%;
+    min-height: 500px;
+    height: unset;
+    &:hover {
+      box-shadow: unset;
+      scale: unset;
+      border-radius: unset;
+      background: #fff;
+      scale: unset;
+    }
+    &_subtitle {
+      margin-top: 5px;
+    }
+  }
+}

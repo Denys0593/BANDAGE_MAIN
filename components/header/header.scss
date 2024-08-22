@@ -10,7 +10,7 @@ header {
 .upper {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 0 195px;
   height: 58px;
   &_left {
     display: flex;
@@ -127,7 +127,7 @@ header {
 .lowwer {
   height: 58px;
   margin-top: 12px;
-  padding: 0 30px;
+  padding: 0 195px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,6 +173,24 @@ header {
   }
 }
 
+@media (max-width: 1440px) {
+  .upper {
+    padding: 0 95px;
+    &_center {
+      font-size: 11px;
+    }
+    &_right {
+      width: 222px;
+      &__icons {
+        width: 110px;
+      }
+    }
+  }
+  .lowwer {
+    padding: 0 95px;
+  }
+}
+
 @media (max-width: 1200px) {
   .upper {
     &_center {
@@ -189,6 +207,7 @@ header {
 
 @media (max-width: 992px) {
   .upper {
+    padding: 0 15px;
     &_left {
       width: unset;
       &__info {
@@ -206,10 +225,12 @@ header {
       }
       .phone-number {
         font-size: 12px;
+        font-weight: 400;
         margin-left: 5px;
       }
       .email-text {
         font-size: 12px;
+        font-weight: 400;
       }
     }
     &_right {
@@ -221,6 +242,9 @@ header {
   }
   .right-side {
     margin-left: 22px;
+  }
+  .lowwer {
+    padding: 0 15px;
   }
 }
 

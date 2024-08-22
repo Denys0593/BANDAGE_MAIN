@@ -4,7 +4,7 @@ const Shop = () => {
   return (
     <li className="listNavi_containerShop">
       <div className="listNavi_wrapper">
-        <Link href="/product_list">Shop</Link>
+        <div className="listNavi_item">Shop</div>
         <img
           src="/icons/arrowDown.svg"
           alt="arrowDown"

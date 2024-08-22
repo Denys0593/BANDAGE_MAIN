@@ -27,3 +27,19 @@
     color: #737373;
   }
 }
+
+@media (max-width: 992px) {
+  .containerFooterItem {
+    height: unset;
+    &_title {
+      font-size: 14px;
+    }
+    &_item {
+      font-size: 12px;
+    }
+    &_list {
+      height: 100px;
+      min-height: unset;
+    }
+  }
+}

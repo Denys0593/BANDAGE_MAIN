@@ -4,15 +4,18 @@ import Link from "next/link";
 import Shop from "./Shop";
 
 import "./navi.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navi = () => {
   const [showmenu, setShowmenu] = useState(false);
-  const body = document.querySelector("body");
-  const bodyWidth = window.getComputedStyle(body).getPropertyValue("width");
 
-  body.style.width = showmenu ? bodyWidth : "";
-  body.style.overflow = showmenu ? "hidden" : "";
+  useEffect(() => {
+    const body = document.querySelector("body");
+    const bodyWidth = window.getComputedStyle(body).getPropertyValue("width");
+
+    body.style.width = showmenu ? bodyWidth : "";
+    body.style.overflow = showmenu ? "hidden" : "";
+  }, []);
 
   return (
     <>
@@ -25,7 +28,6 @@ const Navi = () => {
         <span></span>
       </div>
       <nav>
-        {/* <ul className={`listNavi ${showmenu ? "menuColumn" : null}`}> */}
         <ul className={`listNavi ${showmenu ? "listNavi_active" : ""}`}>
           <li className="listNavi_item">
             <Link href="/">Home</Link>

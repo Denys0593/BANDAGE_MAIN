@@ -51,12 +51,17 @@
     .active {
       display: flex;
     }
+    .none {
+      display: none;
+    }
   }
   &_image {
     border-radius: 9px;
     width: 316px;
     height: 372px;
-    box-shadow: 10px 8px 3px 2px rgba(196, 196, 196, 0.2);
+    img {
+      box-shadow: 10px 8px 3px 2px rgba(196, 196, 196, 0.2);
+    }
   }
   &_middle {
     margin-left: 20px;
@@ -107,4 +112,121 @@
 
 [data-list="mt25"] {
   margin-top: 25px;
+}
+
+@media (max-width: 1440px) {
+  .containerProductDescription {
+    padding: 34px 100px 38px 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .containerProductDescription {
+    padding: 34px 80px 38px 80px;
+    min-height: unset;
+    &_image {
+      height: 100%;
+    }
+    &_left {
+      width: 150px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .containerProductDescription {
+    &_lowwer {
+      &_descr {
+        display: grid;
+        grid-template-columns: minmax(220px, 300px) minmax(300px, 450px);
+        gap: 3%;
+      }
+      .active {
+        display: grid;
+      }
+    }
+    &_image {
+      width: 100%;
+      img {
+        box-shadow: 10px 8px 3px 2px rgba(196, 196, 196, 0.2);
+      }
+    }
+    &_middle {
+      width: 100%;
+      margin-left: 0;
+      min-height: unset;
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+    }
+    &_text {
+      margin-top: 15px;
+    }
+    &_left {
+      align-items: baseline;
+      display: flex;
+      gap: 10%;
+      width: unset;
+      min-height: unset;
+    }
+    &_listitem {
+      width: unset;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .containerProductDescription {
+    padding: 34px 40px 38px 40px;
+    &_lowwer {
+      &_descr {
+        display: flex;
+        flex-direction: column;
+      }
+      .active {
+        display: flex;
+      }
+    }
+    &_image {
+      width: unset;
+      margin: 0 auto;
+    }
+    &_middle {
+      margin-top: 30px;
+    }
+    &_title {
+      text-align: center;
+    }
+    &_left {
+      padding-left: 0;
+      justify-content: center;
+    }
+    &_listitem {
+      height: unset;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .containerProductDescription {
+    padding: 34px 30px 38px 30px;
+    &_upper {
+      width: 100%;
+      flex-direction: column;
+      gap: 2%;
+    }
+    hr {
+      display: none;
+    }
+    &_lowwer {
+      margin-top: 50px;
+      padding: 0 10px;
+    }
+    &_middle {
+      margin-top: 55px;
+    }
+    &_left {
+      flex-direction: column;
+      margin-top: 55px;
+    }
+  }
 }

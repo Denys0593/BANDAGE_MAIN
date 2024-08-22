@@ -133,3 +133,101 @@
 .blueColor {
   color: #8ec2f2;
 }
+
+@media (max-width: 1440px) {
+  .containerPost {
+    width: unset;
+    &_upper {
+      width: unset;
+    }
+    &_text {
+      width: unset;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .containerPost {
+    height: unset;
+    &_upper {
+      height: unset;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .postCards {
+    margin-top: 40px;
+    .containerPost {
+      width: 30%;
+      &_lowwer {
+        padding: 10px;
+      }
+      &_selection {
+        width: unset;
+      }
+      &_title {
+        font-size: 13px;
+        font-weight: 700;
+      }
+      &_postInfo {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &_comments {
+        width: 98px;
+      }
+      &_learn {
+        width: unset;
+        text-align: end;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .postCards {
+    flex-direction: column;
+    .containerPost {
+      width: 100%;
+      &_new {
+        left: 50%;
+        top: 10%;
+        transform: translateX(-250%);
+      }
+      &_image {
+        margin: 0 auto;
+      }
+      &_lowwer {
+        padding: 25px 25px 35px 25px;
+        width: 349px;
+        margin: 0 auto;
+      }
+      &_selection {
+        gap: 15px;
+        justify-content: unset;
+      }
+      &_title {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .postCards {
+    .containerPost {
+      &_lowwer {
+        width: unset;
+      }
+      &_postInfo {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+}

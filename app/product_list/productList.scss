@@ -46,9 +46,10 @@
   &_descr {
     margin-top: 50px;
     max-width: 603px;
+    margin-left: 25px;
   }
   &_title {
-    margin-left: 25px;
+    // margin-left: 25px;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
@@ -57,7 +58,7 @@
   }
   &_subtitle {
     margin-top: 10px;
-    margin-left: 25px;
+    // margin-left: 25px;
     font-weight: 700;
     font-size: 14px;
     line-height: 171%;
@@ -65,7 +66,7 @@
     color: #737373;
   }
   p {
-    margin-left: 25px;
+    // margin-left: 25px;
     margin-top: 30px;
   }
   &_priceAndLogos {
@@ -73,7 +74,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    margin-left: 25px;
+    // margin-left: 25px;
   }
   &_price {
     display: flex;
@@ -117,6 +118,77 @@
     }
     img {
       width: 20px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .singleCard {
+    padding: 40px 75px;
+    &_descr {
+      margin-top: 25px;
+    }
+    p {
+      margin-top: 15px;
+    }
+    &_priceAndLogos {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .singleCard {
+    &_middle {
+      width: 334px;
+      height: unset;
+    }
+    &_priceAndLogos {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .singleCard {
+    padding: 40px 58px;
+    &_wrapper {
+      flex-direction: column;
+    }
+    &_descr {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .singleCard {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .singleCard {
+    padding: 40px 40px 20px 40px;
+    &_left {
+      width: 100%;
+    }
+    &_image {
+      width: 100%;
+      height: unset;
+    }
+    &_middle {
+      display: none;
+    }
+    &_descr {
+      p {
+        font-size: 14px;
+      }
+    }
+    &_priceAndLogos {
+      flex-direction: column;
+      align-items: start;
+      height: 80px;
     }
   }
 }

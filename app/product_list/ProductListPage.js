@@ -20,14 +20,21 @@ const ProductListPage = ({ data }) => {
   const [showRegister, setShowRegister] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [overflow, setOverflow] = useState(false);
+  const [imageSize, setImageSize] = useState("");
 
   // const body = document.querySelector("body");
   // body.style.overflow = overflow ? "hidden" : "";
 
   useEffect(() => {
+    if (window.innerWidth < 768) {
+      setImageSize("clipPathUnset");
+    }
+  }, []);
+
+  useEffect(() => {
     const body = document.querySelector("body");
     body.style.overflow = overflow ? "hidden" : "";
-  }, [overflow])
+  }, [overflow]);
 
   const changeState = (state, setState) => {
     setState((state) => !state);
@@ -136,9 +143,9 @@ const ProductListPage = ({ data }) => {
       />
       <ShopCards data={data} />
       <FilterRow data={arr} sortThis={sortThis} changeNumber={changeNumber} />
-      <ProductCard showPagination={true} data={arr} />
+      <ProductCard showPagination={true} data={arr} imageSize={imageSize} />
       <Logos data={data} />
-      <Footer background={""} />
+      <Footer />
     </>
   );
 };

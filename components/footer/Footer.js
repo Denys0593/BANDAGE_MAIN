@@ -35,10 +35,10 @@ const items = [
   },
 ];
 
-const Footer = ({ background }) => {
+const Footer = () => {
   return (
     <footer>
-      <div style={{ background: background }} className="containerSocial">
+      <div className="containerSocial">
         <Link href="/" className="containerSocial_left">
           Bandage
         </Link>
@@ -68,7 +68,7 @@ const Footer = ({ background }) => {
         <Form />
       </div>
       <div className="footerEnd">
-        Made With Love By Finland All Right Reserved{" "}
+        <p>Made With Love By Finland All Right Reserved</p>
       </div>
     </footer>
   );

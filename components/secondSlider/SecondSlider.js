@@ -9,11 +9,9 @@ import { PrismicNextImage } from "@prismicio/next";
 const SecondSlider = ({ data }) => {
   const [num, setNum] = useState(0);
 
-  const sliders = document.querySelectorAll(".secondSlider");
-  const dots = document.querySelectorAll(".secondSliderdots_dot");
-  const dotsParent = document.querySelector(".secondSliderdots");
-
   const changeSlider = () => {
+    const sliders = document.querySelectorAll(".secondSlider");
+    const dots = document.querySelectorAll(".secondSliderdots_dot");
     sliders.forEach((item, i) => {
       item.classList.add("displayNo");
 
@@ -44,18 +42,6 @@ const SecondSlider = ({ data }) => {
     });
   };
 
-  const changeSliderByDots = () => {
-    setNum((num) => num + 1);
-    dots.forEach((item, i) => {
-      if (i === num) {
-        sliders.forEach((slider, index) => {
-          slider.classList.add("displayNo");
-        });
-        sliders[i].classList.remove("displayNo");
-      }
-    });
-  };
-
   const secondChance = (e) => {
     const glina = document.querySelectorAll(".secondSlider");
     const dots = document.querySelectorAll(".secondSliderdots_dot");
@@ -76,6 +62,7 @@ const SecondSlider = ({ data }) => {
   };
 
   useEffect(changeSlider, [num]);
+
   return (
     <div className="containerSecondSlider">
       {data.slices[4].items.map((slider, i) => {

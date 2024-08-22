@@ -1,5 +1,6 @@
 .containerPosts {
   padding: 112px 188px;
+  padding-bottom: 0;
   width: 100%;
   &_practice {
     display: block;
@@ -27,5 +28,26 @@
     letter-spacing: 0.01em;
     text-align: center;
     color: #737373;
+  }
+}
+
+@media (max-width: 1440px) {
+  .containerPosts {
+    padding: 80px 100px;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .containerPosts {
+    padding: 80px 60px;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerPosts {
+    padding: 80px 40px;
+    padding-bottom: 0;
   }
 }

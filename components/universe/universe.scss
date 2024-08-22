@@ -154,8 +154,9 @@
 @media (max-width: 768px) {
   .containerUniverse {
     flex-direction: column;
-    height: 100vh;
+    height: unset;
     padding: 40px;
+    gap: 25px;
     &_left {
       padding-left: 22px;
       order: 2;
@@ -188,7 +189,7 @@
 
 @media (max-width: 576px) {
   .containerUniverse {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     &_left {
       padding-left: 40px;
       img {

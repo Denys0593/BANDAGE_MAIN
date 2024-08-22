@@ -131,3 +131,34 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .register {
+    width: 400px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .register {
+    width: unset;
+    min-width: 200px;
+    max-width: 400px;
+    &_form {
+      margin-top: 0;
+    }
+    &_item {
+      input {
+        padding: 0 10px;
+        height: 40px;
+      }
+    }
+    &_wrapper {
+      margin-top: 15px;
+    }
+    &_submit {
+      margin-top: 15px;
+      height: 50px;
+    }
+  }
+}

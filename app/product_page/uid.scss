@@ -16,10 +16,6 @@
     margin-left: 25px;
     margin-top: 30px;
   }
-  .single {
-    margin-top: 50px;
-    font-size: 20px;
-  }
   .price {
     margin-top: 30px;
   }
@@ -29,5 +25,62 @@
   .old {
     text-decoration: line-through;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .singleProductCard {
+    &_image {
+      flex: 1;
+      height: 100%;
+    }
+    &_descr {
+      flex: 1;
+      align-self: center;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .singleProductCard {
+    padding: 40px 80px;
+    &_wrapper {
+      gap: unset;
+    }
+    &_descr {
+      flex: 1.5;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .singleProductCard {
+    padding: 40px 80px;
+    &_wrapper {
+      flex-direction: column;
+    }
+    &_descr {
+      align-self: unset;
+      margin-top: 50px;
+      p {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .singleProductCard {
+    padding: 40px;
+
+    &_descr {
+      margin-top: 30px;
+      p {
+        margin-left: 0;
+        font-size: 14px;
+        margin-top: 17px;
+      }
+    }
   }
 }

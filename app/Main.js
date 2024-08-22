@@ -34,7 +34,7 @@ export default function Main({ data }) {
   useEffect(() => {
     const body = document.querySelector("body");
     body.style.overflow = overflow ? "hidden" : "";
-  }, [overflow])
+  }, [overflow]);
 
   return (
     <>
@@ -67,7 +67,7 @@ export default function Main({ data }) {
       <SecondSlider data={data} />
       <Universe data={data} />
       <Posts />
-      <Footer background={"#fafafa"} />
+      <Footer />
     </>
   );
 }

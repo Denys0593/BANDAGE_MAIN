@@ -3,7 +3,7 @@
 import { PrismicNextImage } from "@prismicio/next";
 import "./productDescription.scss";
 import { PrismicRichText } from "@prismicio/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ProductDescription = ({ data }) => {
   const [display, setDisplay] = useState("descr");
@@ -50,14 +50,15 @@ const ProductDescription = ({ data }) => {
       <hr />
       <div className="containerProductDescription_lowwer">
         <div
-          className={`containerProductDescription_lowwer_descr ${display === "descr" && " active"}`}
+          className={`containerProductDescription_lowwer_descr ${display === "descr" ? " active" : " none"}`}
         >
-          <PrismicNextImage
-            priority
-            field={data.slices[1].primary.image}
-            alt=""
-            className="containerProductDescription_image"
-          />
+          <div className="containerProductDescription_image">
+            <PrismicNextImage
+              priority
+              field={data.slices[1].primary.image}
+              alt=""
+            />
+          </div>
 
           <div className="containerProductDescription_middle">
             <h2 className="containerProductDescription_title">
@@ -68,41 +69,54 @@ const ProductDescription = ({ data }) => {
             </div>
           </div>
           <div className="containerProductDescription_left">
-            <h2 className="containerProductDescription_title">
-              {data.slices[1].primary.title2}
-            </h2>
-            <ul className="containerProductDescription_list">
-              {data.slices[1].items.map((item, i) => {
-                if (i > 3) {
-                  return;
-                }
-                return (
-                  <li key={i} className="containerProductDescription_listitem">
-                    <PrismicNextImage
-                      field={data.slices[1].primary.arrow}
-                      alt=""
-                    />
-                    <span>{item.listItem}</span>
-                  </li>
-                );
-              })}
-            </ul>
-            <h2 className="containerProductDescription_title" data-list="mt25">
-              {data.slices[1].primary.title3}
-            </h2>
-            <ul className="containerProductDescription_list">
-              {data.slices[1].items.slice(4).map((item, i) => {
-                return (
-                  <li key={i} className="containerProductDescription_listitem">
-                    <PrismicNextImage
-                      field={data.slices[1].primary.arrow}
-                      alt=""
-                    />
-                    <span>{item.listItem}</span>
-                  </li>
-                );
-              })}
-            </ul>
+            <div>
+              <h2 className="containerProductDescription_title">
+                {data.slices[1].primary.title2}
+              </h2>
+              <ul className="containerProductDescription_list">
+                {data.slices[1].items.map((item, i) => {
+                  if (i > 3) {
+                    return;
+                  }
+                  return (
+                    <li
+                      key={i}
+                      className="containerProductDescription_listitem"
+                    >
+                      <PrismicNextImage
+                        field={data.slices[1].primary.arrow}
+                        alt=""
+                      />
+                      <span>{item.listItem}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div>
+              <h2
+                className="containerProductDescription_title"
+                data-list="mt25"
+              >
+                {data.slices[1].primary.title3}
+              </h2>
+              <ul className="containerProductDescription_list">
+                {data.slices[1].items.slice(4).map((item, i) => {
+                  return (
+                    <li
+                      key={i}
+                      className="containerProductDescription_listitem"
+                    >
+                      <PrismicNextImage
+                        field={data.slices[1].primary.arrow}
+                        alt=""
+                      />
+                      <span>{item.listItem}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         </div>
         <div

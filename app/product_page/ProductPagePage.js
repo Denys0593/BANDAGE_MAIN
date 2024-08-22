@@ -21,9 +21,9 @@ const ProductPagePage = ({ data }) => {
   // body.style.overflow = overflow ? "hidden" : "";
 
   useEffect(() => {
-  const body = document.querySelector("body");
-  body.style.overflow = overflow ? "hidden" : "";
-  }, [overflow])
+    const body = document.querySelector("body");
+    body.style.overflow = overflow ? "hidden" : "";
+  }, [overflow]);
 
   const changeState = (state, setState) => {
     setState((state) => !state);

@@ -74,3 +74,15 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media (max-width: 576px) {
+  .containerPagination {
+    width: 313px;
+    height: 60px;
+    &_first,
+    &_item,
+    &_next {
+      padding: 0;
+    }
+  }
+}

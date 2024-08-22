@@ -106,3 +106,31 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .login {
+    width: 400px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .login {
+    width: unset;
+    min-width: 200px;
+    max-width: 400px;
+    &_form {
+      margin-top: 0;
+    }
+    &_item {
+      input {
+        height: 40px;
+        padding: 10px;
+      }
+    }
+    &_submit {
+      margin-top: 15px;
+      height: 50px;
+    }
+  }
+}

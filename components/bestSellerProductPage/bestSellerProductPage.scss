@@ -1,7 +1,7 @@
 .containerBSPP {
   padding: 48px 158px 48px 232px;
   width: 100%;
-  height: 1086px;
+  min-height: 1086px;
   background: #fafafa;
   &_title {
     font-weight: 700;
@@ -12,5 +12,29 @@
   }
   hr {
     margin-top: 24px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .containerBSPP {
+    padding: 48px 195px;
+  }
+}
+
+@media (max-width: 992px) {
+  .containerBSPP {
+    padding: 48px 80px;
+    &_title {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .containerBSPP {
+    padding: 48px 40px;
+    &_title {
+      text-align: center;
+    }
   }
 }

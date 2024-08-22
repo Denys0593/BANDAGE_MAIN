@@ -24,7 +24,7 @@ const FilterRow = ({ data, sortThis, changeNumber }) => {
     <div className="containerFilterRow">
       <div className="containerFilterRow_left">Showing all 12 results</div>
       <div className="containerFilterRow_middle">
-        Views:
+        <p>Views:</p>
         <button className="containerFilterRow_squares">
           <img src="productListPage/icons/squares.svg" alt="squares" />
         </button>

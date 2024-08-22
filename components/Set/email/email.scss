@@ -98,3 +98,26 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .email {
+    width: 400px;
+    &_textareaInput {
+      height: 100px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .email {
+    width: unset;
+    min-width: 200px;
+    max-width: 400px;
+    &_textareaInput {
+      height: 60px;
+    }
+    &_sendButton {
+      height: 40px;
+    }
+  }
+}

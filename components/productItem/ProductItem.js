@@ -104,7 +104,7 @@ const ProductItem = ({ data }) => {
         <div className="containerProductItem_right">
           {data.slices[0].items.map((element, i) => {
             return (
-              <div key={i}>
+              <div className="containerProductItem_description" key={i}>
                 <div className="containerProductItem_title">Floating Phone</div>
                 <div className="containerProductItem_rate">
                   <div className="containerProductItem_stars">

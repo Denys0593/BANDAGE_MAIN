@@ -1,15 +1,14 @@
 .productCards {
-  // padding: 0 196px 0 196px;
+  padding: 0 195px;
   width: 100%;
   min-height: 76px;
   // display: flex;
   // justify-content: space-between;
   // flex-wrap: wrap;
 
-  padding: 0 37.5px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  column-gap: 30px;
+  column-gap: 24px;
   grid-auto-rows: auto;
 }
 
@@ -104,9 +103,14 @@
   margin-top: 30px;
 }
 
+@media (max-width: 1440px) {
+  .productCards {
+    padding: 0 75px;
+  }
+}
+
 @media (max-width: 992px) {
   .productCards {
-    padding: 0;
     row-gap: 15px;
     .productCard {
       margin-top: 0;
@@ -120,7 +124,11 @@
 
 @media (max-width: 768px) {
   .productCards {
-    grid-template-columns: unset;
+    // grid-template-columns: unset;
+    grid-template-columns: 312px;
+    row-gap: 30px;
+    grid-auto-rows: 600px;
+    justify-content: center;
     .productCard {
       position: relative;
       &_cardButton {
@@ -132,7 +140,7 @@
       }
       &_wrapper {
         position: absolute;
-        top: 75%;
+        top: 70%;
         bottom: 4%;
         left: 50%;
         height: unset;
@@ -160,6 +168,9 @@
         width: 27px;
         height: 100%;
       }
+      .clipPathUnset {
+        clip-path: unset;
+      }
     }
   }
 }
@@ -167,11 +178,20 @@
 @media (max-width: 576px) {
   .productCards {
     margin-top: 48px;
-    grid-auto-rows: auto;
+    padding: 0 33px;
+    grid-template-rows: auto;
     grid-template-columns: 1fr;
+    grid-auto-rows: auto;
     .productCard {
+      &_cardButton {
+        img {
+          clip-path: unset;
+        }
+      }
       &_wrapper {
-        top: 74%;
+        margin: 25px auto 35px auto;
+        position: unset;
+        transform: unset;
         min-height: 102px;
       }
       &_title {
