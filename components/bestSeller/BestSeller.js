@@ -4,6 +4,7 @@ import ProductCard from "../productCard/ProductCard";
 import "./bestSeller.scss";
 
 const BestSeller = ({ data }) => {
+  console.log("xyu");
   return (
     <div className="containerBestSeller">
       <div className="containerBestSeller_wrapper">
