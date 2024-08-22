@@ -190,6 +190,24 @@
   }
 }
 
+@media (max-width: 576px) {
+  .containerCards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 500px);
+    grid-auto-rows: auto;
+  }
+  #card1,
+  #card2,
+  #card3,
+  #card4 {
+    grid-column: unset;
+    grid-row: unset;
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
 // @media (max-width: 768px) {
 //   .containerEditors {
 //     &_wrapper {
