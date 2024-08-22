@@ -12,9 +12,13 @@ const Shop = () => {
         />
       </div>
       <ul className="shop">
-        <li className="shop_item">number1</li>
-        <li className="shop_item">number2</li>
-        <li className="shop_item">number3</li>
+        <li className="shop_item">
+          <Link href="/product_list">Product list</Link>
+        </li>
+        <li className="shop_item">
+          <Link href="/product_page">Product page</Link>
+        </li>
+        <li className="shop_item">something else</li>
       </ul>
     </li>
   );
