@@ -67,6 +67,7 @@ export default function Main({ data }) {
       <SecondSlider data={data} />
       <Universe data={data} />
       <Posts />
+
       <Footer />
     </>
   );

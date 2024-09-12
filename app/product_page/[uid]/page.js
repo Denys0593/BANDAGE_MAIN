@@ -8,6 +8,12 @@ import Header from "@/components/header/Header";
 import { PrismicRichText } from "@prismicio/react";
 import PrismicSingleProduct from "./PrismicSingleProduct";
 
+export function generateMetadata({ params: { uid } }) {
+  return {
+    title: uid,
+  };
+}
+
 const SingleProduct = async ({ params: { uid } }) => {
   const client = createClient();
   const { data } = await client.getSingle("productpage");

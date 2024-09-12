@@ -6,16 +6,7 @@ import Info from "../headerLow/info/Info";
 
 import "./header.scss";
 
-const Header = ({
-  background,
-  cart,
-  heart,
-  data,
-  setArr,
-  emailOn,
-  registerOn,
-  loginOn,
-}) => {
+const Header = ({ background, data, setArr, emailOn, registerOn, loginOn }) => {
   return (
     <header>
       <div className="upper" style={{ background: background }}>
@@ -76,8 +67,6 @@ const Header = ({
         <div className="right-side">
           <Navi />
           <Info
-            cart={cart}
-            heart={heart}
             data={data}
             setArr={setArr}
             registerOn={registerOn}

@@ -5,7 +5,7 @@ import Link from "next/link";
 import "./info.scss";
 import { useState } from "react";
 
-const Info = ({ cart, heart, data, setArr, registerOn, loginOn }) => {
+const Info = ({ data, setArr, registerOn, loginOn }) => {
   const [search, setSearch] = useState(false);
   const [value, setValue] = useState("");
 
@@ -65,7 +65,7 @@ const Info = ({ cart, heart, data, setArr, registerOn, loginOn }) => {
         </div>
         <Link href="/">
           <img src="/icons/cart.svg" alt="cart" data-cart="cart" />
-          <div data-number="cart">{cart}</div>
+          {/* <div data-number="cart">{cartNumber}</div> */}
         </Link>
         <Link href="/">
           <img
@@ -74,7 +74,7 @@ const Info = ({ cart, heart, data, setArr, registerOn, loginOn }) => {
             className="icons_item"
             data-heart="heart"
           />
-          <div data-number="heart">{heart}</div>
+          <div data-number="heart"></div>
         </Link>
       </div>
     </div>

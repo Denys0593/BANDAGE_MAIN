@@ -19,6 +19,7 @@ const Images = ({ item }) => {
       });
     }
   };
+
   return (
     <div className="singleCard_images">
       <div className="singleCard_left" onClick={(e) => change(e)}>

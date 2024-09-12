@@ -3,7 +3,7 @@ import ProductPagePage from "./ProductPagePage";
 import { createClient } from "@/prismicio";
 
 export const metadata = {
-  title: "Product page",
+  title: "Product Page",
 };
 
 const ProductPage = async () => {
@@ -13,7 +13,6 @@ const ProductPage = async () => {
   return (
     <>
       <ProductPagePage data={data} />
-
     </>
   );
 };

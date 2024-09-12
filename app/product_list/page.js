@@ -10,6 +10,10 @@ import Footer from "@/components/footer/Footer";
 import { createClient } from "@/prismicio";
 import ProductListPage from "./ProductListPage";
 
+export const metadata = {
+  title: "Product List",
+};
+
 const ProductList = async () => {
   const client = createClient();
 
