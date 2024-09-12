@@ -61,7 +61,7 @@ export default function Main({ data }) {
         registerOn={() => changeState(showRegister, setShowRegister)}
         loginOn={() => changeState(showLogin, setShowLogin)}
       />
-      <div style={{ fontsize: "50px" }}>fdgjdfgjdfhjgdlkfhgfhgfgf</div>
+      <div style={{ fontsize: "50px" }}>fdgjdfgjhjgdlkfhgfhgfgf</div>
       <Slider data={data} />
       <Editors data={data} />
       <BestSeller data={arr} />
