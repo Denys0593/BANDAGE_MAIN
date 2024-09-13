@@ -102,16 +102,8 @@ const SecondSlider = ({ data }) => {
         <img src="/icons/arrowSliderRight.svg" alt="arrowSliderRight" />
       </button>
       <div onClick={(e) => secondChance(e)} className="secondSliderdots">
-        <div
-          // onClick={() => changeSliderByDots()}
-          data-dot="0"
-          className="secondSliderdots_dot activeDot"
-        ></div>
-        <div
-          // onClick={() => changeSliderByDots()}
-          data-dot="1"
-          className="secondSliderdots_dot"
-        ></div>
+        <div data-dot="0" className="secondSliderdots_dot activeDot"></div>
+        <div data-dot="1" className="secondSliderdots_dot"></div>
       </div>
     </div>
   );

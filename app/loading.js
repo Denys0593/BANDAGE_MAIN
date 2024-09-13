@@ -9,7 +9,7 @@ const LoadingPage = () => {
         position: "absolute",
       }}
       src="Spin.gif"
-      alt="f"
+      alt=""
     />
   );
 };
