@@ -23,7 +23,7 @@ const ProductItem = ({ data }) => {
     });
   };
 
-  const xyu = (i) => {
+  const pictureChange = (i) => {
     setNum((num) => num + i);
   };
 
@@ -62,13 +62,13 @@ const ProductItem = ({ data }) => {
           <div className="containerProductItem_upper">
             <img src={bigPicture} alt="" className="containerProductItem_img" />
             <button
-              onClick={() => xyu(-1)}
+              onClick={() => pictureChange(-1)}
               className="containerProductItem_arrowLeft"
             >
               <img src="icons/arrowSliderLeft.svg" alt="arrowSliderLeft" />
             </button>
             <button
-              onClick={() => xyu(1)}
+              onClick={() => pictureChange(1)}
               className="containerProductItem_arrowRight"
             >
               <img src="icons/arrowSliderRight.svg" alt="arrowSliderRight" />

@@ -32,19 +32,6 @@ const FilterRow = ({ data, sortThis, changeNumber }) => {
           <img src="productListPage/icons/lines.svg" alt="lines" />
         </button>
       </div>
-      {/* <form className="containerFilterRow_right">
-        <select onChange={(e) => changeNumber(e)} id="select">
-          <option value="1">Popularity</option>
-          <option value="2">Price, low to high</option>
-          <option value="3">Price, high to low</option>
-        </select>
-        <button
-          onClick={(e) => sortThis(e, data)}
-          className="containerFilterRow_filterButton"
-        >
-          Filter
-        </button>
-      </form> */}
       <div className="containerFilterRow_group">
         <div className="containerFilterRow_father">
           <button

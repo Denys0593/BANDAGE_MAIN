@@ -43,10 +43,10 @@ const SecondSlider = ({ data }) => {
   };
 
   const secondChance = (e) => {
-    const glina = document.querySelectorAll(".secondSlider");
+    const secondSlider = document.querySelectorAll(".secondSlider");
     const dots = document.querySelectorAll(".secondSliderdots_dot");
 
-    glina.forEach((slider, index) => {
+    changePicture.forEach((slider, index) => {
       slider.classList.add("displayNo");
 
       if (index === +e.target.getAttribute("data-dot")) {
