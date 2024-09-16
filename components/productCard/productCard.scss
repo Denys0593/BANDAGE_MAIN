@@ -2,10 +2,6 @@
   padding: 0 195px;
   width: 100%;
   min-height: 76px;
-  // display: flex;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   column-gap: 24px;
@@ -13,8 +9,6 @@
 }
 
 .productCard {
-  // width: 238px;
-  // max-height: 639px;
   margin-top: 80px;
   &:hover {
     box-shadow: 1px 1px 10px rgba(245, 123, 75, 0.6);

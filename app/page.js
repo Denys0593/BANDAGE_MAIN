@@ -7,7 +7,6 @@ export const metadata = {
 
 export default async function Home() {
   const client = createClient();
-
   const { data } = await client.getSingle("index");
 
   return (

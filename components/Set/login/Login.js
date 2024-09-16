@@ -26,7 +26,15 @@ const Login = ({ showLogin, close, setOverflow }) => {
 
   return (
     <div
-      style={{ display: showLogin ? "" : "none" }}
+      style={
+        showLogin
+          ? {
+              opacity: "1",
+              visibility: "visible",
+              transition: ".2s linear",
+            }
+          : { opacity: "0", visibility: "hidden", transition: ".2s linear" }
+      }
       className="loginContainer"
     >
       <div className="login">

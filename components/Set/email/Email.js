@@ -27,7 +27,15 @@ const Email = ({ showEmail, close, setOverflow }) => {
 
   return (
     <div
-      style={{ display: showEmail ? "" : "none" }}
+      style={
+        showEmail
+          ? {
+              opacity: "1",
+              visibility: "visible",
+              transition: ".2s linear",
+            }
+          : { opacity: "0", visibility: "hidden", transition: ".2s linear" }
+      }
       className="emailContainer"
     >
       <div className="email">

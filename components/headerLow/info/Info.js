@@ -14,7 +14,7 @@ const Info = ({ data, setArr, registerOn, loginOn }) => {
 
     if (value !== "") {
       data.slices[1].items.map((item, i) => {
-        if (item.category.includes(value)) {
+        if (item.category.includes(value) || item.title.includes(value)) {
           data = [item];
         }
       });

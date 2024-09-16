@@ -28,9 +28,6 @@ export default function Main({ data }) {
     setOverflow(true);
   };
 
-  // const body = document.querySelector("body");
-  // body.style.overflow = overflow ? "hidden" : "";
-
   useEffect(() => {
     const body = document.querySelector("body");
     body.style.overflow = overflow ? "hidden" : "";

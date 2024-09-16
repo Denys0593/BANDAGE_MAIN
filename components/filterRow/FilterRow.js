@@ -42,7 +42,19 @@ const FilterRow = ({ data, sortThis, changeNumber }) => {
             {chosen}
           </button>
           <ul
-            style={dropDown ? { display: "block" } : { display: "none" }}
+            style={
+              dropDown
+                ? {
+                    opacity: 1,
+                    visibility: "visible",
+                    transition: ".2s linear",
+                  }
+                : {
+                    opacity: 0,
+                    visibility: "hidden",
+                    transition: ".2s linear",
+                  }
+            }
             className="containerFilterRow_dropDown"
             onClick={(e) => changeChosen(e)}
           >

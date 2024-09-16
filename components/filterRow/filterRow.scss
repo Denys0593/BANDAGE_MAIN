@@ -101,7 +101,8 @@
     font-size: 14px;
     line-height: 200%;
     letter-spacing: 0.01em;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 
     &-item {
       padding: 13px 5px 13px 18px;
